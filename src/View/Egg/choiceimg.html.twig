@@ -1,0 +1,35 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    
+{% block title2 %}Choice Characters{% endblock %}
+
+<div class="container">
+	<div class="row rowchoice">
+
+		{% for char in chars %}
+			<div class="col-md-4">
+				<!-- Card -->
+				<div class="card cardchoice">
+					<!-- Card image -->
+					<img class="card-img-top img-fluid imgchoice" src="{{char.image}}" alt="Card image cap">
+					<!-- Card content -->
+					<div class="card-body text-center">
+						<!-- <h4 class="card-title"><a>Card title</a></h4> -->
+						<a href="/choice/character" class="btn btn-primary btnchoice">Select</a>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+
+
+	</div>
+</div>	
+
+
+<div class="row pt-5">
+	<a href="/character/show"><button type="button" class="btn btn-danger btn-rounded ">Start Fight</button></a>
+</div>
+
+
+{% endblock content %}

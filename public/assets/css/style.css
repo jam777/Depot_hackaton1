@@ -1,0 +1,51 @@
+body{
+	background-image:url( 
+	https://image.freepik.com/vecteurs-libre/fond-ring-boxe-zone-sportive-illuminee-pour-combat-sport-dangereux_33099-1023.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+
+}
+
+h3{
+	text-align: center;
+	color:white;
+	font-weight: bold;
+	background-color: #47807A;
+	margin: 0;
+}
+
+.row{
+	justify-content: center;
+
+}
+
+.btn-danger {
+    padding: 2rem 8rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.display-4{
+	color:white;
+	font-weight:bold;
+}
+
+.rowchoice{
+	justify-content: space-around !important;
+}
+
+.btnchoice{
+	padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin:0 auto !important;
+
+}
+
+.imgchoice{
+	
+	height:20rem;
+
+}
+
+

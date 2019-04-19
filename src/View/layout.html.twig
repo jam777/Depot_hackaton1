@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    {% block stylesheet %}{% endblock %}
+    <link rel="icon" href="/assets/images/favicon.png">
+	
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="/assets/mdbootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="/assets/mdbootstrap/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+   <link rel="stylesheet" href="/assets/css/style.css">
+
+   <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+<div class="jumbotron jumbotron-fluid success-color">
+	<div class="container">
+		<h2 class="display-4 text-center">{% block title2 %}{% endblock %}</h2>
+	</div>
+</div>
+
+{% block content %}{% endblock %}
+{% block javascript %}{% endblock %}
+</body>
+</html>
+
+
